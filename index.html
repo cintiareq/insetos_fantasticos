@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script>
+    document.documentElement.className += ' js';
+  </script>
   <title>Insetos Fantásticos</title>
 </head>
 
 <body>
-  <nav class="menu">
+  <nav class="menu js-menu">
     <ul>
-      <li><a href="#animais">Insetos</a></li>
+      <li><a href="#insetos">Insetos</a></li>
       <li><a href="#faq">Faq</a></li>
       <li><a href="#contato">Contato</a></li>
       <li><a href="#">Dev →</a></li>
     </ul>
   </nav>
 
-  <section class="grid-section" id="insetos">
+  <section class="grid-section js-scroll" id="insetos">
     <h1 class="titulo">Insetos Fantásticos</h1>
-    <ul class="insetos-lista">
+    <ul class="insetos-lista js-tabmenu">
       <li>
         <img src="img/imagem1.jfif" alt="">
       </li>
@@ -41,7 +44,7 @@
         <img src="img/imagem6.jfif" alt="">
       </li>
     </ul>
-    <div class="insetos-descricao">
+    <div class="insetos-descricao js-tabcontent">
       <section>
         <h2>Besouro</h2>
         <p>
@@ -162,9 +165,9 @@
       </section>
     </div>
   </section>
-  <section class="grid-section faq" id="faq">
+  <section class="grid-section faq js-scroll" id="faq">
     <h1 class="titulo">FAQ</h1>
-    <dl class="faq-lista">
+    <dl class="faq-lista js-accordion">
       <dt>
         Qual a idade dos animais?
       <dd>
@@ -192,7 +195,7 @@
     </dl>
   </section>
 
-  <section class="grid-section contato" id="contato">
+  <section class="grid-section contato js-scroll" id="contato">
     <h1 class="titulo">Contato</h1>
     <div class="mapa">
       <img src="img/mapa.png" alt="Mapa">
@@ -212,7 +215,7 @@
   </section>
 
 
-  <script src="main.js">
+  <script src="script.js">
   </script>
 </body>
 
